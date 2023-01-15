@@ -178,7 +178,27 @@ img {
     margin-top: 4rem;
 }
 
-/*Sobre Nosotros*/
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.curso__info {
+    font-weight: normal;
+}
+
+.curso_label, .curso__info {
+    font-size: 2rem;
+}
 
 
 @media (min-width:768px) {
@@ -209,6 +229,12 @@ img {
     .sobre-nosotros {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
 }
