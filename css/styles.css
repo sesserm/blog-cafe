@@ -75,8 +75,15 @@ img {
     text-align: center;
 }
 
-.header {
+.webp .header {
+    background-image: url('../img/banner.webp');
+}
+
+.no-webp .header {
     background-image: url('../img/banner.jpg');
+}
+
+.header {
     height: 60rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -278,3 +285,4 @@ img {
         column-gap: 2rem;
     }
 }
+
